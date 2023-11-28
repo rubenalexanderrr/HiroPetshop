@@ -26,10 +26,23 @@
                 </li>
             </ul>
             <ul>
-                <li class="flex ">
-                    <a href="" class="p-[5px] hover:font-semibold ease-linear duration-150">Services</a>
-                    <img src="../assets/chevron-down.svg" alt="">
-                </li>
+                <div>
+                    <li class="flex">
+                        <div onclick="toggleDropdown()" class="p-[5px] hover:font-semibold transition-all">Services</div>
+                        <img class="transition-all duration-500" onclick="toggleDropdown()" id="chevron" src="../assets/chevron-down.svg" alt="">
+                    </li>
+                    <div class="absolute hidden  show-reverse transition-all text-center items-center" id="dropdown">
+                        <li class="my-4">
+                            <a href="" class="hover:font-semibold ease-linear duration-150">Adoption</a>
+                        </li>
+                        <li class="my-4">
+                            <a href="" class="hover:font-semibold ease-linear duration-150">Grooming</a>
+                        </li>
+                        <li class="my-4">
+                            <a href="" class="hover:font-semibold ease-linear duration-150">Catalogue</a>
+                        </li>
+                    </div>
+                </div>
             </ul>
             <ul>
                 <li>
@@ -50,6 +63,22 @@
         </nav>
     </div>
     </div>
+
+
+    <script>
+        function toggleHidden() {
+            dropdown.classList.toggle('hidden');
+        }
+
+        function toggleDropdown() {
+            let dropdown = document.querySelector("#dropdown");
+            let chevron = document.querySelector("#chevron");
+            chevron.classList.toggle('rotate-180');
+            dropdown.classList.toggle('show');
+            dropdown.classList.toggle('show-reverse');
+            setTimeout(toggleHidden, 300);
+        }
+    </script>
 </body>
 
 </html>
