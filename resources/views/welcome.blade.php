@@ -17,48 +17,51 @@
         <nav class="m-[20px] w-[750px] flex items-center justify-between text-sm font-light text-primary">
             <ul>
                 <li>
-                    <a href="" class="p-[5px] hover:font-semibold ease-linear duration-150">Who we are</a>
+                    <a href="" class="p-[5px] hover:font-medium ease-linear duration-150 opacity-70 hover:opacity-100">Who we are</a>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <a href="" class="p-[5px] hover:font-semibold ease-linear duration-150">What we do</a>
+                    <a href="" class="p-[5px] hover:font-medium ease-linear duration-150 opacity-70 hover:opacity-100">What we do</a>
                 </li>
             </ul>
             <ul>
                 <div>
-                    <li class="flex">
-                        <div onclick="toggleDropdown()" class="p-[5px] hover:font-semibold transition-all">Services</div>
-                        <img class="transition-all duration-500" onclick="toggleDropdown()" id="chevron" src="../assets/chevron-down.svg" alt="">
+                    <li class="">
+                        <div onclick="toggleDropdown()" class="flex gap-1 p-[5px] hover:font-medium transition-all opacity-70 hover:opacity-100">Services
+                            <img class="transition-all duration-500 opacity-70 hover:opacity-100" onclick="toggleDropdown()" id="chevron" src="../assets/chevron-down.svg" alt="">
+                        </div>
                     </li>
-                    <div class="absolute hidden  show-reverse transition-all text-center items-center" id="dropdown">
+                    <div class="absolute hidden show-reverse transition-all text-center items-center" id="dropdown">
                         <li class="my-4">
-                            <a href="" class="hover:font-semibold ease-linear duration-150">Adoption</a>
+                            <a href="" class="hover:font-medium ease-linear duration-150 opacity-70 hover:opacity-100">Adoption</a>
                         </li>
                         <li class="my-4">
-                            <a href="" class="hover:font-semibold ease-linear duration-150">Grooming</a>
+                            <a href="" class="hover:font-medium ease-linear duration-150 opacity-70 hover:opacity-100">Grooming</a>
                         </li>
                         <li class="my-4">
-                            <a href="" class="hover:font-semibold ease-linear duration-150">Catalogue</a>
+                            <a href="" class="hover:font-medium ease-linear duration-150 opacity-70 hover:opacity-100">Catalogue</a>
                         </li>
                     </div>
                 </div>
             </ul>
             <ul>
                 <li>
-                    <a href="" class="p-[5px] hover:font-semibold ease-linear duration-150">Gallery</a>
+                    <a href="" class="p-[5px] hover:font-medium ease-linear duration-150 opacity-70 hover:opacity-100">Gallery</a>
                 </li>
             </ul>
             <div class="w-[158px] flex items-center justify-between ml-2">
                 <ul>
-                    <li class="w-[70px] border text-center border-primary border-opacity-30 p-[5px]">
-                        <a href="" class="">Signup</a>
-                    </li>
+                    <a class="" href="{{ url('login')}}">
+                        <div class="opacity-70 hover:opacity-100 hover:bg-gray-100 hover:font-medium transition-all w-[70px] border text-center border-primary border-opacity-30 p-[5px]">Login
+                        </div>
+                    </a>
                 </ul>
                 <ul>
-                    <li class="w-[70px] border text-center border-primary border-opacity-30 p-[5px]">
-                        <a href="">Login</a>
-                    </li>
+                    <a class="" href="{{ url('login')}}">
+                        <div class="opacity-70 hover:opacity-100 hover:bg-gray-100 hover:font-medium transition-all w-[70px] border text-center border-primary border-opacity-30 p-[5px]">Signup
+                        </div>
+                    </a>
                 </ul>
         </nav>
     </div>
