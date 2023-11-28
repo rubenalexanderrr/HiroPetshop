@@ -76,7 +76,11 @@
             chevron.classList.toggle('rotate-180');
             dropdown.classList.toggle('show');
             dropdown.classList.toggle('show-reverse');
-            setTimeout(toggleHidden, 300);
+            if (dropdown.classList.contains("hidden")) {
+                setTimeout(toggleHidden, 50);
+            } else {
+                setTimeout(toggleHidden, 370);
+            }
         }
     </script>
 </body>

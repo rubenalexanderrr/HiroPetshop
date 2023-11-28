@@ -450,10 +450,12 @@ span{
 @keyframes show {
   from{
     opacity: 0;
+    top: 20%;
   }
 
   to{
     opacity: 1;
+    top : 70%
   }
 }
 
@@ -469,10 +471,12 @@ span{
 @keyframes show-reverse{
   from{
     opacity: 1;
+    top : 70%
   }
 
   to{
     opacity: 0;
+    top: 20%;
   }
 }
 
@@ -693,10 +697,6 @@ span{
   padding: 5px;
 }
 
-.pl-1 {
-  padding-left: 0.25rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -727,10 +727,6 @@ span{
 
 .duration-150 {
   transition-duration: 150ms;
-}
-
-.duration-300 {
-  transition-duration: 300ms;
 }
 
 .duration-500 {

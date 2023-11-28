@@ -21,9 +21,11 @@
     @keyframes show {
         from{
             opacity: 0;
+            top: 20%;
         }
         to{
             opacity: 1;
+            top : 70%
         }
     }
     .show-reverse{
@@ -39,9 +41,11 @@
     @keyframes show-reverse{
         from{
             opacity: 1;
+            top : 70%
         }
         to{
             opacity: 0;
+            top: 20%;
         }
     }
 }
